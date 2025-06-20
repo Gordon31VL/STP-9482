@@ -31,8 +31,8 @@
   padding: 8px 4px;
 }
 
-.header_mobile_menu_button:active {
-  fill: #DF9D91;
+.header_mobile_menu_button:active, .nav {
+  fill: #8DFEFF;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -104,5 +104,8 @@
 
   .header_menu_item {
     color: #0c1729;
+  }
+  .header_mobile_menu_button:hover {
+    fill: #DF9D91;
   }
 }

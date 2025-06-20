@@ -13,6 +13,10 @@
   .font_menu:hover {
     color: #df9d91;
   }
+
+  .font_menu:active {
+    color: #8DFEFF;
+  }
 }
 
 .accordeon_element {
@@ -20,53 +24,69 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  margin-bottom: 28px;
 }
 
+.section_title,
+.accordeon_element_btn_icon {
+  transition: color 0.3s ease;
+}
 
 .accordeon_element_btn_icon {
   color: #fbfef9;
   width: 40px;
   height: 40px;
-  transition: color 0.3s ease;
   display: block;
 }
 
-.accordeon_element_btn_icon:hover {
-  color: #df9d91;
+.accordeon_element:active .section_title,
+.accordeon_element:active .accordeon_element_btn_icon {
+  color: #8dfeff;
 }
-  
-  .accordeon_element {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 44px;
-  }
-  
-  .accordeon_element::after {
-    content: "";
-    position: absolute;
-    bottom: -4px; /* відступ вниз */
-    left: 0;
-    right: 40px;
-    height: 2px;
-    width: 236px;
-    background-color: #fbfef9;
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    .accordeon_element_btn_icon {
-        width: 66px;
-        height: 66px;
-      }
 
-      .accordeon_element::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        right: 66px;
-        height: 2px;
-        width: 966px;
-        background-color: #fbfef9;
-      }
+.accordeon_element:active::after {
+  background-color: #8dfeff;
+}
+
+.accordeon_element::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; /* відступ вниз */
+  left: 0;
+  right: 40px;
+  height: 2px;
+  width: 236px;
+  background-color: #fbfef9;
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (min-width: 1200px) {
+  .accordeon_element_btn_icon {
+    width: 66px;
+    height: 66px;
   }
+
+  .accordeon_element::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 66px;
+    width: 966px;
+  }
+  .accordeon_element {
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+
+  .accordeon_element:hover .section_title,
+  .accordeon_element:focus-within .section_title,
+  .accordeon_element:hover .accordeon_element_btn_icon,
+  .accordeon_element:focus-within .accordeon_element_btn_icon {
+    color: #df9d91;
+  }
+
+  .accordeon_element:hover::after,
+  .accordeon_element:focus-within::after {
+    background-color: #df9d91;
+  }
+}
