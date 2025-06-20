@@ -3,11 +3,10 @@
   font-size: 18px;
   font-weight: 400;
   transition: color 0.3s ease;
-
 }
 
 .font_menu:active {
-  color: #DF9D91;
+  color: #df9d91;
 }
 @media only screen and (min-width: 1200px) {
   .font_menu:focus,
@@ -15,3 +14,68 @@
     color: #df9d91;
   }
 }
+
+.accordeon_element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+
+.accordeon_element_btn_icon {
+  color: #fbfef9;
+  width: 40px;
+  height: 40px;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.accordeon_element_btn_icon:hover {
+  color: #df9d91;
+}
+
+.section_title {
+    margin: 0;
+  position: relative;
+  font-family: 'Fredoka One', cursive;
+  color: #fbfef9;
+  font-size: 36px;
+  line-height: 44px;
+}
+  
+  .accordeon_element {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+  
+  .accordeon_element::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* відступ вниз */
+    left: 0;
+    right: 40px;
+    height: 2px;
+    width: 236px;
+    background-color: #fbfef9;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .accordeon_element_btn_icon {
+        width: 66px;
+        height: 66px;
+      }
+
+      .accordeon_element::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 66px;
+        height: 2px;
+        width: 966px;
+        background-color: #fbfef9;
+      }
+  }

@@ -1,0 +1,7 @@
+.features_about[data-visible-section="false"] {
+    display: none;
+}
+
+.features_about[data-visible-section="true"] {
+    display: block;
+}
