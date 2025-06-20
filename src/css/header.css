@@ -1,6 +1,11 @@
 .header {
   background-color: #8dfeff59;
   padding: 18px 16px;
+  z-index: 999;
+  position: sticky;
+}
+.header[data-visible-header="false"] {
+  display: none;
 }
 
 .nav { 
@@ -19,13 +24,23 @@
 .header_mobile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.header_mobile_menu_button {
+  padding: 8px 4px;
+}
+
+.header_mobile_menu_button:active {
+  fill: #8DFEFF;
+} 
 
 @media only screen and (min-width: 1200px) {
   .header_mobile {
     display: none;
   }
   .header {
+    display: block !important;
     padding: 31px 72px 39px;
     margin-top: 8px;
     position: relative; /* потрібне для абсолютного позиціонування всередині */

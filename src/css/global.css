@@ -1,0 +1,17 @@
+.font_menu {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+
+}
+
+.font_menu:active {
+  color: #8dfeff;
+}
+@media only screen and (min-width: 1200px) {
+  .font_menu:focus,
+  .font_menu:hover {
+    color: #df9d91;
+  }
+}

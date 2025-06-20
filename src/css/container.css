@@ -5,7 +5,7 @@
 }
 
 section {
-  width: 320px;
+  /* width: 320px; */
   padding: 0 16px;
   
 }
@@ -16,7 +16,7 @@ section {
   }
 
   section {
-    width: 1200px;
+    /* width: 1200px; */
     padding: 0 72px;
   }
 }
