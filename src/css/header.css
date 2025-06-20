@@ -1,7 +1,30 @@
 .header {
   background-color: #8dfeff59;
+  padding: 18px 16px;
 }
+
+.nav { 
+  display: none;
+}
+
+.header_logo {
+  width: 32px;
+  height: 32px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: center 35%;
+}
+
+.header_mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 1200px) {
+  .header_mobile {
+    display: none;
+  }
   .header {
     padding: 31px 72px 39px;
     margin-top: 8px;
@@ -45,10 +68,6 @@
   .header_logo {
     width: 56px;
     height: 56px;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-    object-position: center 35%;
   }
 
   .header_game_name {
