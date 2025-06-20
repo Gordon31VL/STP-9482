@@ -31,3 +31,32 @@ main:has(.back-link) {
   text-align: center;
 }
 
+.first_title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 48px;
+  line-height: 58px;
+}
+.section_title {
+  font-family: 'Fredoka One', cursive;
+  color: #fbfef9;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.third_title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.subtitle {
+  font-family: 'Fredoka One', cursive;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.button_text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 24px;
+  line-height: 29px;
+}

@@ -35,15 +35,6 @@
 .accordeon_element_btn_icon:hover {
   color: #df9d91;
 }
-
-.section_title {
-    margin: 0;
-  position: relative;
-  font-family: 'Fredoka One', cursive;
-  color: #fbfef9;
-  font-size: 36px;
-  line-height: 44px;
-}
   
   .accordeon_element {
     display: flex;
