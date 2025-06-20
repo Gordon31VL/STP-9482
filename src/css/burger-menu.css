@@ -34,7 +34,7 @@
 }
 
 .burger_menu_close_btn:active {
-    fill: #8DFEFF;
+    fill: #DF9D91;
   } 
 @media only screen and (min-width: 1200px) {
     .burger_menu_box {
