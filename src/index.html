@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preload" href="img/sprite.svg" as="image" type="image/svg+xml" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-    <load src="./partials/burger-menu.html" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preload" href="img/sprite.svg" as="image" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <title>Vanilla App Template</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/hero.html" />
-      <load src="./partials/features.html" />
-      <load src="./partials/contact.html" />
-    </main>
 
-    <load src="./partials/footer.html" />
+<body>
+  <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+  <load src="./partials/burger-menu.html" />
 
-    <script type="module" src="main.js"></script>
-    <script type="module" src="js/burgerMenu.js"></script>
-  </body>
+  <main>
+    <!-- Loads the specified .html file -->
+    <load src="./partials/hero.html" />
+    <load src="./partials/features.html" />
+    <load src="./partials/contact.html" />
+  </main>
+
+  <load src="./partials/footer.html" />
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="js/burgerMenu.js"></script>
+</body>
+
 </html>
