@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnClose = container.querySelector('button[data-type="close"]');
     const content = container.nextElementSibling;
 
-    // Знаходимо секцію features_section
-    const featuresSection = container.closest('.features_section');
+    // Знаходимо найближчу секцію (будь-яку) для додавання/видалення класу
+    const section = container.closest('[data-section]');
 
     function toggleAccordeon() {
       const isVisible = content.getAttribute('data-visible-section') === 'true';
@@ -13,20 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
         'data-visible-section',
         isVisible ? 'false' : 'true'
       );
+
       if (isVisible) {
         btnOpen.style.display = '';
         btnClose.style.display = 'none';
-        // Додаємо клас, коли закрито
-        if (featuresSection) {
-          featuresSection.classList.add('features_section--closed');
-        }
+        if (section) section.classList.add('section--closed');
       } else {
         btnOpen.style.display = 'none';
         btnClose.style.display = '';
-        // Видаляємо клас, коли відкрито
-        if (featuresSection) {
-          featuresSection.classList.remove('features_section--closed');
-        }
+        if (section) section.classList.remove('section--closed');
       }
     }
 
@@ -42,15 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Синхронізуємо стан при завантаженні сторінки
+    // Ініціалізація класу при завантаженні
     if (content.getAttribute('data-visible-section') === 'false') {
-      if (featuresSection) {
-        featuresSection.classList.add('features_section--closed');
-      }
+      if (section) section.classList.add('section--closed');
     } else {
-      if (featuresSection) {
-        featuresSection.classList.remove('features_section--closed');
-      }
+      if (section) section.classList.remove('section--closed');
     }
   });
 });
