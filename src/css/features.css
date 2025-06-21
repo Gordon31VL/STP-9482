@@ -1,14 +1,15 @@
 .features_about[data-visible-section='false'] {
   display: none;
+
 }
 
-.features_about[data-visible-section='true'] {
+.features_about {
   display: block;
 }
 
-.features_section--closed {
-    background: none !important;
-  }
+.features_section.section--closed {
+  background: none !important;
+}
 
 .features_section {
   background: url('/img/features/background_element_mobile.png');
