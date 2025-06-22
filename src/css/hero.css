@@ -41,7 +41,7 @@
   background: #8dfeff;
   border-radius: 15px;
   padding: 16px 29px;
-  width: 288px;
+  width: 230px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@
 
   transform: rotate(-7.97deg);
   position: absolute;
-  left: 0;
+  left: 16;
   top: 0;
 }
 
@@ -89,7 +89,7 @@
   height: 240px;
   transform: rotate(7.96deg);
   position: absolute;
-  left: 120.5px;
+  left: 136.5px;
   top: 54.24px;
 }
 
