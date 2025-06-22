@@ -51,13 +51,13 @@ main:has(.back-link) {
 }
 
 .subtitle {
-  font-family: 'Fredoka', sans-serif; 
   font-size: 20px;
   line-height: 34px;
+  font-weight: 700;
 }
 
 .button_text {
-  font-family: 'Fredoka', sans-serif; 
+  font-family: 'Fredoka', sans-serif;
   font-size: 24px;
   line-height: 29px;
 }
@@ -71,7 +71,6 @@ main:has(.back-link) {
   .section_title {
     font-size: 40px;
     line-height: 44px;
-
   }
 
   .first_title {
@@ -82,5 +81,7 @@ main:has(.back-link) {
   .subtitle {
     font-size: 28px;
     line-height: 34px;
+    font-weight: 500;
+    font-family: 'Fredoka', sans-serif;
   }
 }

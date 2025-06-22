@@ -1,5 +1,5 @@
 .how_to_play_section_content[data-visible-section='false'] {
-  /* display: none ; */
+  display: none ;
 }
 
 .how_to_play_section_content {
@@ -87,7 +87,6 @@
 }
 
 .how_to_play_slider_title {
-  font-weight: 500;
   text-align: center;
 }
 .how_to_play_slider_paragraph {
@@ -500,6 +499,132 @@
   .how_to_play_level_progression_text_bottom {
     width: 490px;
     text-align: left;
+  }
+}
+
+
+.how_to_play_boosters_title {
+  color: #fbfef9;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.how_to_play_boosters_text {
+  color: #fbfef9;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+.how_to_play_boosters_item_image_box {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8DFEFF;
+  border-radius: 15px;
+}
+
+.how_to_play_boosters_item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how_to_play_boosters_list {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.how_to_play_boosters_item_text, .how_to_play_boosters_item_title{
+  color: #fbfef9;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .how_to_play_boosters_text {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .how_to_play_boosters_item_text {
+    font-size: 20px;
+  }
+
+  .how_to_play_boosters_item_h_p_box {
+    background-color: #275562;
+  }
+  
+
+  .how_to_play_boosters_box {
+    /* height: 1100px; */
+    position: relative;
+  }
+
+  .how_to_play_boosters_item_image_box {
+    width: 156px;
+    height: 156px;
+    display: flex;
+  }
+  
+  .how_to_play_boosters_item_im {
+    width: 150px;
+    height: 150px;
+  }
+
+  .how_to_play_boosters_list {
+    position: relative;
+    width: 826px;
+    height: 826px;
+    border-radius: 50%;
+    margin: 40px auto;
+    margin-top: 60px;
+  }
+  
+  .how_to_play_boosters_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    width: 232px;
+  }
+  
+  .how_to_play_boosters_item:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  
+  .how_to_play_boosters_item:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg) translateX(300px) rotate(-90deg);
+  }
+  
+  .how_to_play_boosters_item:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(300px) rotate(-180deg);
+  }
+  
+  .how_to_play_boosters_item:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(300px) rotate(-270deg);
+  }
+
+  .how_to_play_boosters_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: url('../img/how_to_play/booster_background_element.png');
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    /* background-size: auto 1193px, auto 1193px; */
+    z-index: -1;
   }
 
 }

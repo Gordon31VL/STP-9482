@@ -31,5 +31,7 @@
     <symbol id="addictive_background_mobile_icon" viewBox="0 0 8 32">
       <path fill="#3b3074" style="fill: var(--color1, #3b3074)" d="M0 0l1.534 2.195 2.724 0.965 2.896-0.965 1.309-2.195v32h-8.463v-32z"></path>
     </symbol>
+
+    
   </defs>
 </svg>
