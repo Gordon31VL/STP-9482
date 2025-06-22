@@ -34,25 +34,25 @@ main:has(.back-link) {
 
 .first_title {
   font-family: 'Fredoka One', cursive;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 58px;
 }
 .section_title {
   font-family: 'Fredoka One', cursive;
   color: #fbfef9;
   font-size: 36px;
-  line-height: 44px;
+  line-height: 58px;
 }
 
 .third_title {
   font-family: 'Fredoka One', cursive;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 39px;
 }
 
 .subtitle {
-  font-family: 'Fredoka One', cursive;
-  font-size: 28px;
+  font-family: 'Fredoka', sans-serif; 
+  font-size: 20px;
   line-height: 34px;
 }
 
@@ -60,4 +60,27 @@ main:has(.back-link) {
   font-family: 'Fredoka', sans-serif; 
   font-size: 24px;
   line-height: 29px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .third_title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .section_title {
+    font-size: 40px;
+    line-height: 44px;
+
+  }
+
+  .first_title {
+    font-size: 48px;
+    line-height: 44px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
