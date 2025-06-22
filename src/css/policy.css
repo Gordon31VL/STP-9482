@@ -1,0 +1,61 @@
+.back-link-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.policy-section {
+  color: #fbfef9;
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.policy-title-1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+}
+.policy-title-2 {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0%;
+}
+.policy-title-2:not(:first-child) {
+  margin-top: 48px;
+}
+.policy-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .policy-section {
+    margin-top: 56px;
+    margin-bottom: 64px;
+  }
+  .policy-title-1 {
+    margin-top: 20px;
+
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .policy-title-2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .policy-item {
+    font-size: 20px;
+  }
+}
