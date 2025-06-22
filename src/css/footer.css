@@ -37,14 +37,12 @@ html {
 }
 .svg-scroll-container {
   position: absolute;
-  top: -25%;
+  top: -20%;
   right: 0;
-  width: 40px;
-  height: 40px;
 }
 .svg-scroll-container svg {
   width: auto;
-  height: 100%auto;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1200px) {
