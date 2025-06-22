@@ -1,8 +1,16 @@
-.back-link-icon {
+.icon-back-link {
+  display: block;
+  align-items: center;
+  margin-right: 3px;
+}
+.back-link {
   display: inline-flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0%;
 }
-
 .policy-section {
   color: #fbfef9;
   margin-top: 16px;
@@ -39,6 +47,15 @@
   list-style-type: disc;
   padding-left: 20px;
 }
+.svg-scroll-container {
+  position: absolute;
+  top: -20%;
+  right: 0;
+}
+.svg-scroll-container svg {
+  width: auto;
+  height: 100%;
+}
 
 @media only screen and (min-width: 1200px) {
   .policy-section {
@@ -57,5 +74,19 @@
   }
   .policy-item {
     font-size: 20px;
+  }
+  .svg-scroll-container {
+    position: absolute;
+    top: -60%;
+    right: 0;
+    width: 66px;
+    height: 66px;
+    pointer-events: auto;
+  }
+  .svg-scroll-container svg {
+    width: 100%;
+    height: 100%;
+
+    display: block;
   }
 }
