@@ -1,9 +1,8 @@
 .features_about[data-visible-section='false'] {
   display: none;
-
 }
 
-.features_about {
+.features_about[data-visible-section='true'] {
   display: block;
 }
 
@@ -16,6 +15,7 @@
   background-position: bottom ;
   background-repeat: no-repeat;
   background-size: auto 1193px;
+  margin-bottom: 64px;
 }
 
 .features_about_top,

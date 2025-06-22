@@ -1,12 +1,12 @@
-.contact-section {
+/* .contact-section {
   margin-top: 32px;
   margin-bottom: 53px;
-}
-.contact_about[data-visible-section='false'] {
+} */
+.contact-about[data-visible-section='false'] {
   display: none;
 }
 
-.contact_about[data-visible-section='true'] {
+.contact-about[data-visible-section='true'] {
   display: block;
 }
 /* .contact_section--closed {
