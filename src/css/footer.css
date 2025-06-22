@@ -37,7 +37,7 @@ html {
 }
 .svg-scroll-container {
   position: absolute;
-  top: -25%;
+  top: -20%;
   right: 0;
   width: 40px;
   height: 40px;
@@ -77,6 +77,10 @@ html {
   .hero-container {
     position: relative;
   }
+  .contact-section.section--closed ~ .footer-section .footer-divider {
+    display: none !important;
+  }
+
   .footer-divider {
     border-top: 2px solid #0c1729;
     margin-top: 43px;
