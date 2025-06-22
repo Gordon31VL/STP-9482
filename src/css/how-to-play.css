@@ -1,0 +1,71 @@
+.how_to_play_section_content[data-visible-section="false"] {
+    display: none ;
+}
+
+.how_to_play_section_content {
+    position: relative;
+    /* margin-bottom: 120px; */
+}
+
+.how_to_play_box_title {
+    color: #fbfef9;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.how_to_play_box_swiper_button_next {
+    transform: rotate(180deg);
+}
+
+.how_to_play_box_swiper_button_next, .how_to_play_box_swiper_button_prev {
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+    background: white;
+    background-color: white ;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+
+.how_to_play_box_swiper_pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    width: 24px;
+    height: 24px;
+}
+
+/* Змінено: Контейнер Swiper */
+.how_to_play_box_swiper {
+    position: relative;
+    height: 288px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Додано: Адаптивні зображення в слайдері */
+.how_to_play_box_swiper_slide img {
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: contain;
+}
+
+/* Змінено: Абсолютне позиціонування навігації */
+.how_to_play_box_swiper_navigation_box {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
