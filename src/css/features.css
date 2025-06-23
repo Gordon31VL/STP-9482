@@ -1,10 +1,6 @@
 .features_about[data-visible-section='false'] {
-  display: none;
-}
-
-.features_about[data-visible-section='true'] {
-  display: block;
-}
+    display: none;
+  }
 
 .features_section.section--closed {
   background: none !important;
@@ -193,3 +189,16 @@
         margin-bottom: 74px;
       }
 }
+
+.features_section.section--closed {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .features_section.section--closed {
+    margin-bottom: 40px;
+  }
+}
+
