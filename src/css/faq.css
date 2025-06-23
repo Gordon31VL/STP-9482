@@ -1,0 +1,59 @@
+.faq-about[data-visible-section='false'] {
+  display: none;
+}
+
+.faq-about[data-visible-section='true'] {
+  display: block;
+}
+
+.faq-about {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.faq-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.faq-list {
+  background: #8dfeff;
+  border-radius: 15px;
+  overflow: hidden; /* запобігає виведенню зображень або тексту за межі */
+  padding: 20px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  width: auto;
+}
+.faq-list:not(:last-child) {
+  margin-bottom: 12px;
+}
+.faq-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-title {
+  padding: 24.5px 20px;
+}
+.popup {
+  margin-top: 12px;
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggleBtn svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.toggleBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

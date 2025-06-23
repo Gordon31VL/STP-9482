@@ -1,0 +1,38 @@
+[33m9915453[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m0873f92[m HEAD@{1}: checkout: moving from contact-desk-fix to main
+[33m024182d[m[33m ([m[1;31morigin/contact-desk-fix[m[33m, [m[1;32mcontact-desk-fix[m[33m)[m HEAD@{2}: commit: contact desctop fix
+[33m0873f92[m HEAD@{3}: checkout: moving from main to contact-desk-fix
+[33m0873f92[m HEAD@{4}: checkout: moving from policy-fix to main
+[33m2efef53[m[33m ([m[1;31morigin/policy-fix[m[33m, [m[1;32mpolicy-fix[m[33m)[m HEAD@{5}: commit: policy fix
+[33m0873f92[m HEAD@{6}: checkout: moving from main to policy-fix
+[33m0873f92[m HEAD@{7}: pull: Fast-forward
+[33md81c7d9[m HEAD@{8}: checkout: moving from sprite to main
+[33m946e1b2[m[33m ([m[1;31morigin/sprite[m[33m, [m[1;32msprite[m[33m)[m HEAD@{9}: commit: sprite
+[33md81c7d9[m HEAD@{10}: checkout: moving from main to sprite
+[33md81c7d9[m HEAD@{11}: pull: Fast-forward
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{12}: checkout: moving from policy to main
+[33mefff9de[m[33m ([m[1;31morigin/policy[m[33m, [m[1;32mpolicy[m[33m)[m HEAD@{13}: commit: Privacy Policy, Terms and Conditions, Cookies Policy
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{14}: checkout: moving from footer-scroll to policy
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{15}: reset: moving to ORIG_HEAD
+[33mde4e512[m[33m ([m[1;31morigin/footer-scroll[m[33m)[m HEAD@{16}: checkout: moving from main to footer-scroll
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{17}: reset: moving to HEAD
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{18}: checkout: moving from footer-scroll to main
+[33mde4e512[m[33m ([m[1;31morigin/footer-scroll[m[33m)[m HEAD@{19}: commit: footer scroll
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{20}: checkout: moving from main to footer-scroll
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{21}: checkout: moving from contact-desk to main
+[33m0f54de1[m[33m ([m[1;32mcontact-desk[m[33m)[m HEAD@{22}: commit: contact desk
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{23}: checkout: moving from main to contact-desk
+[33mc5d0c1b[m[33m ([m[1;32mfooter-scroll[m[33m)[m HEAD@{24}: pull: Fast-forward
+[33mb6fa342[m HEAD@{25}: checkout: moving from contact-mob to main
+[33mf613eef[m[33m ([m[1;32mcontact-mob[m[33m)[m HEAD@{26}: commit: contact mobile
+[33md9e57a4[m[33m ([m[1;31morigin/footer[m[33m, [m[1;32mfooter[m[33m)[m HEAD@{27}: checkout: moving from footer to contact-mob
+[33md9e57a4[m[33m ([m[1;31morigin/footer[m[33m, [m[1;32mfooter[m[33m)[m HEAD@{28}: commit: footer
+[33me735d49[m[33m ([m[1;31morigin/hero[m[33m, [m[1;32mhero[m[33m)[m HEAD@{29}: checkout: moving from hero to footer
+[33me735d49[m[33m ([m[1;31morigin/hero[m[33m, [m[1;32mhero[m[33m)[m HEAD@{30}: commit: hero
+[33mb6fa342[m HEAD@{31}: checkout: moving from main to hero
+[33mb6fa342[m HEAD@{32}: pull: Fast-forward
+[33mcd01053[m HEAD@{33}: pull: Fast-forward
+[33m5e8e3dc[m HEAD@{34}: reset: moving to HEAD
+[33m5e8e3dc[m HEAD@{35}: pull: Fast-forward
+[33m399b808[m HEAD@{36}: reset: moving to HEAD
+[33m399b808[m HEAD@{37}: clone: from https://github.com/Gordon31VL/STP-9482.git
