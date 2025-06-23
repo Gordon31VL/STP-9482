@@ -18,23 +18,13 @@
     color: #8DFEFF;
   }
 }
-/* .accordeon-content {
-  max-height: 5000px; 
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-[data-visible-section='false'].accordeon-content {
-  max-height: 0;
-  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .accordeon_element {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 60px;
 }
 
 .section_title,

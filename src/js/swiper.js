@@ -5,7 +5,6 @@ import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiperEl = document.querySelector('[data-swiper1]');
-  if (!swiperEl) return; // Зупиняємо виконання, якщо слайдер не знайдено
 
   // Знаходимо найближчий спільний контейнер для слайдера та навігації
   const swiperContainer = swiperEl.closest('.how_to_play_box_swiper');
@@ -113,4 +112,32 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+
+  const swiperEl2 = document.querySelector('[data-swiper2]');
+  if (swiperEl2) {
+    const swiperContainer2 = swiperEl2.closest('.how_to_play_event_box');
+
+    const swiper2 = new Swiper(swiperEl2, {
+      modules: [Navigation],
+      loop: true,
+      // centeredSlides: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      height: 359,
+      navigation: {
+        nextEl: swiperContainer2?.querySelector('[data-next-button2]'),
+        prevEl: swiperContainer2?.querySelector('[data-prev-button2]'),
+      },
+
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+          width: 1057,
+        },
+      },
+    });
+  }
 });
+
+
