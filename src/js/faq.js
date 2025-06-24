@@ -1,24 +1,27 @@
-const buttons = document.querySelectorAll('.toggleBtn');
-
-buttons.forEach(btn => {
+document.querySelectorAll('.toggleBtn').forEach(btn => {
   btn.addEventListener('click', () => {
     const faqItem = btn.closest('.faq-item');
     const popup = faqItem.querySelector('.popup');
+    const faqList = btn.closest('.faq-list');
+    const isExpanded = faqList.classList.contains('expanded');
 
-    // Закриваємо всі інші попапи
-    document.querySelectorAll('.popup').forEach(el => {
-      if (el !== popup) el.classList.add('hidden');
+    // Закриваємо всі інші
+    document.querySelectorAll('.faq-list').forEach(item => {
+      item.classList.remove('expanded');
+      const popup = item.querySelector('.popup');
+      popup?.classList.add('hidden');
+
+      const otherBtn = item.querySelector('.toggleBtn');
+      otherBtn?.classList.remove('show-open');
+      otherBtn?.classList.add('show-closed');
     });
 
-    // Перемикаємо видимість popup
-    popup.classList.toggle('hidden');
-
-    // Знаходимо SVG усередині кнопки
-    const closedIcon = btn.querySelector('.icon-closed');
-    const openIcon = btn.querySelector('.icon-open');
-
-    // Перемикаємо іконки
-    closedIcon.classList.toggle('hidden');
-    openIcon.classList.toggle('hidden');
+    // Якщо була закрита — розкриваємо
+    if (!isExpanded) {
+      faqList.classList.add('expanded');
+      popup.classList.remove('hidden');
+      btn.classList.remove('show-closed');
+      btn.classList.add('show-open');
+    }
   });
 });
