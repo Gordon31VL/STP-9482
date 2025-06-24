@@ -169,7 +169,7 @@
     z-index: 2;
     top: 0;
     right: 0;
-    width: 315%;
+    /* width: 315%; */
   }
   .faq-column.side.right {
     position: relative;
@@ -180,9 +180,9 @@
     z-index: 2;
     top: 0;
 
-    width: 315%;
+    /* width: 315%; */
     right: 0;
-    transform: translateX(-68%); /* виїзд уліво */
+    /* transform: translateX(-68%); */
     transition: transform 0.3s ease, height 0.3s ease;
   }
   .faq-column.side .expanded .faq-button {
