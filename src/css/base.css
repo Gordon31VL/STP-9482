@@ -2,7 +2,7 @@
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
 
   color: #242424;
@@ -30,6 +30,15 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
 }
 
 .first_title {
@@ -85,3 +94,5 @@ main:has(.back-link) {
     font-family: 'Fredoka', sans-serif;
   }
 }
+
+

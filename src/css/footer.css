@@ -75,6 +75,10 @@ html {
   .hero-container {
     position: relative;
   }
+  .contact-section.section--closed ~ .footer-section .footer-divider {
+    display: none !important;
+  }
+
   .footer-divider {
     border-top: 2px solid #0c1729;
     margin-top: 43px;
