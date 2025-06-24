@@ -1,16 +1,14 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import { Navigation, Pagination, EffectCoverflow, Autoplay, EffectCreative } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiperEl = document.querySelector('[data-swiper1]');
 
-  // Знаходимо найближчий спільний контейнер для слайдера та навігації
-  const swiperContainer = swiperEl.closest('.how_to_play_box_swiper');
+  const swiperContainer = swiperEl.closest('[data-swiper-container1]');
   const contentEl = document.querySelector('[data-howToPlaySliderText]');
 
-  // Масив з унікальним контентом для слайдів
   const slideContent = [
     {
       title: 'Lorem ipsum tortor laoreet facilisi facilisis.',
@@ -26,10 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
-  // Функція для оновлення тексту під слайдером
   function updateContent(index) {
     if (contentEl) {
-      // Використовуємо оператор ділення за модулем для циклічного отримання контенту
       const contentIndex = index % slideContent.length;
       const content = slideContent[contentIndex];
       if (content) {
@@ -49,10 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     centeredSlides: true,
     slidesPerView: 1,
     spaceBetween: 20,
-    initialSlide: 1, // Починаємо з другого слайда
+    initialSlide: 1,
 
     navigation: {
-      // Шукаємо кнопки всередині спільного контейнера
       nextEl: swiperContainer.querySelector('[data-next-button1]'),
       prevEl: swiperContainer.querySelector('[data-prev-button1]'),
     },
@@ -79,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     on: {
       init: function () {
         updateContent(this.realIndex);
-        // Обробка кліків по кастомній пагінації
         this.pagination.el.addEventListener('click', e => {
           if (e.target.matches('[data-bullet-index]')) {
             const index = parseInt(
@@ -92,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       slideChange: function () {
         updateContent(this.realIndex);
-        // Оновлюємо пагінацію при зміні слайда
         this.pagination.render();
         this.pagination.update();
       },
@@ -101,10 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
       1200: {
         effect: 'coverflow',
         slidesPerView: 'auto',
-        spaceBetween: -80, // Ваш від'ємний відступ
+        spaceBetween: -80,
         coverflowEffect: {
           rotate: 0,
-          stretch: 0, // Прибираємо розтягнення для щільного прилягання
+          stretch: 0,
           depth: 150,
           modifier: 1,
           slideShadows: false,
@@ -115,12 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const swiperEl2 = document.querySelector('[data-swiper2]');
   if (swiperEl2) {
-    const swiperContainer2 = swiperEl2.closest('.how_to_play_event_box');
+    const swiperContainer2 = swiperEl2.closest('[data-swiper-container2]');
 
     const swiper2 = new Swiper(swiperEl2, {
       modules: [Navigation],
       loop: true,
-      // centeredSlides: true,
       slidesPerView: 1,
       spaceBetween: 32,
       height: 359,
@@ -138,6 +130,59 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     });
   }
+
+  const swiperEl3 = document.querySelector('[data-swiper3]');
+  if (swiperEl3) {
+    const swiper3 = new Swiper(swiperEl3, {
+      modules: [Navigation, Autoplay],
+      loop: true,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      watchSlidesProgress: true,
+      simulateTouch: false,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      initialSlide: Math.floor(10 / 2),
+      breakpoints: {
+        1200: {
+          slidesPerView: 3.5,
+          spaceBetween: -136,
+          initialSlide: Math.floor(10 / 2),
+          centeredSlides: true,
+        },
+      },
+      on: {
+        slideChange: function () {
+          setPrevNextClasses(this);
+        },
+        init: function () {
+          setPrevNextClasses(this);
+        },
+      },
+    });
+
+    function setPrevNextClasses(swiper) {
+      // Знімаємо старі класи
+      swiper.slides.forEach(slide => {
+        slide.classList.remove(
+          'swiper-slide-prev-prev',
+          'swiper-slide-next-next'
+        );
+      });
+
+      // Отримуємо індекси
+      const slidesCount = swiper.slides.length;
+      const active = swiper.activeIndex;
+      const prev = (active - 1 + slidesCount) % slidesCount;
+      const prevPrev = (active - 2 + slidesCount) % slidesCount;
+      const next = (active + 1) % slidesCount;
+      const nextNext = (active + 2) % slidesCount;
+
+      swiper.slides[prevPrev]?.classList.add('swiper-slide-prev-prev');
+      swiper.slides[nextNext]?.classList.add('swiper-slide-next-next');
+    }
+  }
 });
-
-

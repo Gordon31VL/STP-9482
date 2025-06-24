@@ -182,10 +182,10 @@
 
     width: 315%;
     right: 0;
-    transform: translateX(-75%); /* виїзд уліво */
+    transform: translateX(-68%); /* виїзд уліво */
     transition: transform 0.3s ease, height 0.3s ease;
   }
-  .faq-column.side .faq-button {
-    justify-content: space-between;
+  .faq-column.side .expanded .faq-button {
+    flex-direction: row;
   }
 }
