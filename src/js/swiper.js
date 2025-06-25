@@ -117,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
       spaceBetween: 32,
       height: 359,
       navigation: {
-        nextEl: swiperContainer2?.querySelector('[data-next-button2]'),
-        prevEl: swiperContainer2?.querySelector('[data-prev-button2]'),
+        nextEl: '[data-next-button2]',
+        prevEl: '[data-prev-button2]',
       },
 
       breakpoints: {
