@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptBtn = document.querySelector('[data-accept]');
   const declineBtn = document.querySelector('[data-decline]');
 
-  // Якщо вже прийнято кукі — не показуємо банер
   if (localStorage.getItem('cookiesAccepted') === 'true') {
     cookieBox.style.display = 'none';
   }
