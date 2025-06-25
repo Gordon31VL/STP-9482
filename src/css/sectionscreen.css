@@ -1,0 +1,28 @@
+.faq-about[data-visible-section='false'] {
+  display: none;
+}
+
+.faq-about[data-visible-section='true'] {
+  display: block;
+}
+.screen-gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.screen-gallery li {
+  flex: 0 1 calc(50% - 8px);
+  box-sizing: border-box;
+}
+
+.screen-img {
+  width: auto;
+}
+
+.screen-gallery li:nth-child(2),
+.screen-gallery li:nth-child(4) {
+  margin-top: 46px;
+}
