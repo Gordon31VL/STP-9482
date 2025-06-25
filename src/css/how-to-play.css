@@ -1,5 +1,5 @@
 .how_to_play_section_content[data-visible-section='false'] {
-  display: none ;
+  display: none;
 }
 
 .how_to_play_section_content {
@@ -236,7 +236,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 320px;
   height: 100%;
   background: url('/img/how_to_play/addictive_background_mobile_icon.png');
   background-position: bottom;
@@ -302,7 +302,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1200px;
     height: 100%;
     background: url('/img/how_to_play/addictive_background_desktop_1.png'),
       url('/img/how_to_play/addictive_background_desktop_2.png');
@@ -441,7 +441,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 320px;
   height: 100%;
   background: url('/img/how_to_play/level_background_element_mobile_bottom.png'),
     url('/img/how_to_play/level_background_element_mobile_top.png');
@@ -458,7 +458,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1200px;
     height: 100%;
     background: url('/img/how_to_play/level_background_element_bottom.png'),
       url('/img/how_to_play/level_background_element_top.png');
@@ -621,7 +621,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1200px;
     height: 100%;
     background: url('/img/how_to_play/booster_background_element.png');
     background-position: center;
@@ -667,7 +667,7 @@
 }
 
 .how_to_play_event_swiper_slide_text {
-  color: #0C1729;
+  color: #0c1729;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -693,7 +693,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;
+  width: 320px;
   height: 100%;
   background: url('/img/how_to_play/how_to_play_event_background_mobile_element.png');
   background-position: bottom;
@@ -718,7 +718,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1200px;
     height: 100%;
     background: url('/img/how_to_play/how_to_play_event_background_element.png');
     background-position: bottom;
@@ -780,7 +780,6 @@
   }
 }
 
-
 .how_to_play_pressure_box {
   /* padding-top: 32px; */
   height: 600px;
@@ -789,7 +788,8 @@
   position: relative;
 }
 
-.how_to_play_pressure_box_title, .how_to_play_pressure_box_text {
+.how_to_play_pressure_box_title,
+.how_to_play_pressure_box_text {
   color: #fbfef9;
   text-align: center;
 }
@@ -811,10 +811,18 @@
   transform: translateX(-50%);
   width: 320px;
   height: 100%;
-  background: url('/img/how_to_play/first_diamont_pressure_background_mobile_element.png'), url('/img/how_to_play/first_fire_pressure_background_mobile_element.png'), url('/img/how_to_play/first_star_pressure_background_mobile_element.png'), url('/img/how_to_play/first_star_pressure_background_mobile_element.png'), url('/img/how_to_play/second_star_pressure_background_mobile_element.png'), url('/img/how_to_play/first_heart_pressure_background_mobile_element.png'), url('/img/how_to_play/second_heart_pressure_background_mobile_element.png');
-  background-position: top 478px right 0, top 452px left 0, top 70px right 0, top 303px right 0, top 303px left 0, top 46px left 0, top 488px left 86px;
+  background: url('/img/how_to_play/first_diamont_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/first_fire_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/second_star_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/first_heart_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/second_heart_pressure_background_mobile_element.png');
+  background-position: top 478px right 0, top 452px left 0, top 70px right 0,
+    top 303px right 0, top 303px left 0, top 46px left 0, top 488px left 86px;
   background-repeat: no-repeat;
-  background-size: 61px 91px, 52px 88px, 23px 35px, 23px 35px, 26px 35px, 40px 48px, 109px 108px;
+  background-size: 61px 91px, 52px 88px, 23px 35px, 23px 35px, 26px 35px,
+    40px 48px, 109px 108px;
   background-clip: content;
   z-index: -1;
 }
@@ -845,10 +853,20 @@
     transform: translateX(-50%);
     width: 1200px;
     height: 100%;
-    background: url('/img/how_to_play/first_star_pressure_background_desktop_element.png'), url('/img/how_to_play/first_star_pressure_background_desktop_element.png'), url('/img/how_to_play/first_star_pressure_background_desktop_element.png'), url('/img/how_to_play/first_star_pressure_background_desktop_element.png'), url('/img/how_to_play/first_diamond_pressure_background_desktop_element.png'), url('/img/how_to_play/first_heart_pressure_background_desktop_element.png'), url('/img/how_to_play/second_heart_pressure_background_desktop_element.png'), url('/img/how_to_play/first_fire_pressure_background_desktop_element.png');
-    background-position: top 277px left 0, top 364px left 504px, top 333px right 130px, right 0 top 0, top 132px right 0, top 326px left 184px, top 274 right 315px, top 31px left 10px ;
+    background: url('/img/how_to_play/first_star_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_star_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_star_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_star_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_diamond_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_heart_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/second_heart_pressure_background_desktop_element.png'),
+      url('/img/how_to_play/first_fire_pressure_background_desktop_element.png');
+    background-position: top 277px left 0, top 364px left 504px,
+      top 333px right 130px, right 0 top 0, top 132px right 0,
+      top 326px left 184px, top 274 right 315px, top 31px left 10px;
     background-repeat: no-repeat;
-    background-size: 69px 69px, 69px 69px, 69px 69px, 69px 69px, 140px 141px, 111px 111px, 111px 111px, 140px 141px;
+    background-size: 69px 69px, 69px 69px, 69px 69px, 69px 69px, 140px 141px,
+      111px 111px, 111px 111px, 140px 141px;
     background-clip: content;
     z-index: -1;
   }
@@ -873,13 +891,14 @@
   box-sizing: border-box;
 }
 
-.how_to_play_who_its_box_text, .how_to_play_who_its_box_title {
+.how_to_play_who_its_box_text,
+.how_to_play_who_its_box_title {
   color: #fbfef9;
   text-align: center;
 }
 
 .how_to_play_who_its_box_item_text {
-  color: #0C1729;
+  color: #0c1729;
   text-align: center;
 }
 
@@ -895,16 +914,29 @@
   margin-bottom: 20px;
 }
 
-.how_to_play_who_its_box_item:first-child, .how_to_play_who_its_box_item:last-child {
-  background-color: #DF9D91;
+.how_to_play_who_its_box_item:first-child,
+.how_to_play_who_its_box_item:last-child {
+  background-color: #df9d91;
   padding: 0 12px;
   height: 164px;
 }
 
 .how_to_play_who_its_box_item:nth-child(4) {
-  background-color: #FFF77D;
+  background-color: #fff77d;
   padding: 0 22px;
   z-index: 10;
+}
+.swiper-button-prev .button_prev_icon,
+.swiper-button-next .button_next_icon {
+  stroke: #fbfef9;
+  fill: #fbfef9;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.swiper-button-prev:active .button_prev_icon,
+.swiper-button-next:active .button_next_icon {
+  stroke: #8dfeff;
+  fill: #8dfeff;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -946,8 +978,9 @@
     top: 129px;
     right: 0px;
   }
-  .how_to_play_who_its_box_item:first-child, .how_to_play_who_its_box_item:last-child {
-    width: 283px;    
+  .how_to_play_who_its_box_item:first-child,
+  .how_to_play_who_its_box_item:last-child {
+    width: 283px;
   }
   .how_to_play_who_its_box_text {
     margin-bottom: 32px;
@@ -958,5 +991,17 @@
   }
   .how_to_play_who_its_box {
     margin-bottom: 64px;
+  }
+
+  .how_to_play_event_swiper_slide {
+    cursor: pointer;
+  }
+
+  .swiper-button-prev:hover .button_prev_icon,
+  .swiper-button-prev:focus .button_prev_icon,
+  .swiper-button-next:hover .button_next_icon,
+  .swiper-button-next:focus .button_next_icon {
+    stroke: #df9d91;
+    fill: #df9d91;
   }
 }

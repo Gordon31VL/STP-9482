@@ -32,7 +32,13 @@
   justify-content: center;
 
   margin-bottom: 24px;
+  transition: background-color 0.3s ease;
 }
+
+.button-hero:active {
+  background-color: #8dfeff;
+}
+
 .hero-icon {
   padding-right: 5.5px;
 }
@@ -91,9 +97,15 @@
   position: absolute;
   left: 136.5px;
   top: 54.24px;
+  object-position: 0px -16px ;
 }
 
 @media only screen and (min-width: 1200px) {
+
+  .button-hero:hover, .button-hero:focus {
+    background: #df9d91;
+  }
+
   .hero-section {
     padding-top: 58px;
     padding-bottom: 78px;
