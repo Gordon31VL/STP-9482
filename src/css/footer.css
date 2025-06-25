@@ -39,6 +39,14 @@ html {
   position: absolute;
   top: -20%;
   right: 0;
+  background-color: #0C1729;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
 }
 .svg-scroll-container svg {
   width: auto;
@@ -52,7 +60,9 @@ html {
 .icon-back-link {
   fill: #FBFEF9;
   stroke: #FBFEF9;
+  transition: fill 0.3s ease, stroke 0.3s ease;
 }
+
 .back-link:active .icon-back-link {
   fill: #8dfeff;
   stroke: #8dfeff;
@@ -60,6 +70,26 @@ html {
 .back-link:hover, .back-link:focus{
   color: #8dfeff;
 }
+
+.footer-li {
+  transition: color 0.3s ease;
+}
+
+.back-link {
+  transition: color 0.3s ease;
+}
+.icon-page-up {
+  height: 32px;
+  width: 14px;
+  fill: #FBFEF9;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.svg-scroll-container:active .icon-page-up {
+  fill: #8dfeff;
+  stroke: #8dfeff;
+}
+
 @media only screen and (min-width: 1200px) {
   .footer-section {
     position: relative;
@@ -108,12 +138,12 @@ html {
     height: 66px;
     pointer-events: auto;
   }
-  .svg-scroll-container svg {
+  /* .svg-scroll-container svg {
     width: 100%;
     height: 100%;
 
     display: block;
-  }
+  } */
 
   .footer-li:hover, .footer-li:focus{
     color: #DF9D91;
@@ -125,8 +155,18 @@ html {
   }.back-link:hover, .back-link:focus{
     color: #DF9D91;
   }
-  .footer-divider {
-    background-color: #275562;
+
+  .svg-scroll-container:hover .icon-page-up,
+  .svg-scroll-container:focus .icon-page-up {
+    fill: #DF9D91;
+    stroke: #DF9D91;
   }
+
+  .icon-page-up {
+    width: 20px;
+    height: 43px;
+    transform-origin: 20px 43px;
+  }
+
 }
 
