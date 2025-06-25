@@ -1,9 +1,19 @@
 .header {
-  background-color: #8dfeff59;
+  background: rgba(141, 254, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(px);
   padding: 18px 16px;
   z-index: 999;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
+
+#Features, #HowToPlay, #Screenshots, #FAQ, #Contact {
+  scroll-margin-top: 121px;
+}
+
 .header[data-visible-header='false'] {
   display: none;
 }
@@ -41,9 +51,25 @@
   }
   .header {
     display: block !important;
-    padding: 31px 72px 39px;
-    margin-top: 8px;
-    position: relative; /* потрібне для абсолютного позиціонування всередині */
+    padding: 39px 0px 39px;
+    /* margin-top: 8px; */
+    position: fixed;
+    /* overflow: hidden; */
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 100%;
+    background: url('/img/header_backgtound_element.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    z-index: -1;
   }
 
   .nav {

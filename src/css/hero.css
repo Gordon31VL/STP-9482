@@ -3,6 +3,7 @@
 
   padding-top: 32px;
   text-align: center;
+
 }
 .hero-section .container {
   position: relative;
@@ -110,6 +111,7 @@
     padding-top: 58px;
     padding-bottom: 78px;
     margin-bottom: 72px;
+    margin-top: 105px;
   }
 
   @media only screen and (min-width: 1200px) {
