@@ -1,8 +1,8 @@
-.faq-about[data-visible-section='false'] {
+.screen-gallery[data-visible-section='false'] {
   display: none;
 }
 
-.faq-about[data-visible-section='true'] {
+.screen-gallery[data-visible-section='true'] {
   display: block;
 }
 
@@ -96,5 +96,63 @@
     left: 360px;
     width: 156px;
     height: 304px;
+  }
+}
+
+.screenshot-modal {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.screenshot-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.screenshot-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+.screenshot-modal-content {
+  position: relative;
+  z-index: 1;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
+}
+
+.screenshot-modal.active .screenshot-modal-content {
+  transform: scale(1);
+}
+
+.screenshot-modal-content img {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 12px;
+}
+
+.screenshot-modal-content img[data-screenshot-modal-img] {
+  transform: scale(1.5);
+}
+
+@media only screen and (min-width: 1200px) {
+  .screenshot-modal-content img[data-screenshot-modal-img] {
+    transform: scale(2);
   }
 }

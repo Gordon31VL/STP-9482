@@ -45,6 +45,21 @@ html {
   height: 100%;
 }
 
+.footer-li:active {
+  color: #DF9D91;
+}
+
+.icon-back-link {
+  fill: #FBFEF9;
+  stroke: #FBFEF9;
+}
+.back-link:active .icon-back-link {
+  fill: #8dfeff;
+  stroke: #8dfeff;
+}
+.back-link:hover, .back-link:focus{
+  color: #8dfeff;
+}
 @media only screen and (min-width: 1200px) {
   .footer-section {
     position: relative;
@@ -99,4 +114,19 @@ html {
 
     display: block;
   }
+
+  .footer-li:hover, .footer-li:focus{
+    color: #DF9D91;
+  }
+
+  .back-link:hover .icon-back-link, .back-link:focus .icon-back-link{
+    fill: #DF9D91;
+    stroke: #DF9D91;
+  }.back-link:hover, .back-link:focus{
+    color: #DF9D91;
+  }
+  .footer-divider {
+    background-color: #275562;
+  }
 }
+
