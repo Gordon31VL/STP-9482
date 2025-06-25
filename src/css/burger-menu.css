@@ -8,6 +8,7 @@
     z-index: 1000;
     background-color: #8DFEFF;
     display: block;
+    position: fixed;
 }
 
 .burger_menu_head {

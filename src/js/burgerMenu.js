@@ -12,3 +12,11 @@ closeBtnEl.addEventListener('click', e => {
   header.dataset.visibleHeader = 'true';
   console.log('close')
 });
+
+const navLinks = burgerMenuEl.querySelectorAll('a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burgerMenuEl.dataset.visible = 'false';
+    header.dataset.visibleHeader = 'true';
+  });
+});
