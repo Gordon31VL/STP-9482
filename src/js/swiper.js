@@ -164,12 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function setPrevNextClasses(swiper) {
-      // Знімаємо старі класи
       swiper.slides.forEach(slide => {
-        slide.classList.remove(
-          'swiper-slide-prev-prev',
-          'swiper-slide-next-next'
-        );
+        slide.removeAttribute('data-slide-prev-prev');
+        slide.removeAttribute('data-slide-next-next');
       });
 
       // Отримуємо індекси
@@ -180,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const next = (active + 1) % slidesCount;
       const nextNext = (active + 2) % slidesCount;
 
-      swiper.slides[prevPrev]?.classList.add('swiper-slide-prev-prev');
-      swiper.slides[nextNext]?.classList.add('swiper-slide-next-next');
+      swiper.slides[prevPrev]?.setAttribute('data-slide-prev-prev', '');
+      swiper.slides[nextNext]?.setAttribute('data-slide-next-next', '');
     }
   }
 });
