@@ -143,7 +143,7 @@
     z-index: 1;
   }
 
-  .testimonials_swiper .swiper-slide-prev-prev .testimonials_swiper_slide {
+  .testimonials_swiper .swiper-slide[data-slide-prev-prev] .testimonials_swiper_slide {
     transform: rotate(10deg);
     z-index: 0;
     margin-right: -48px;
@@ -162,7 +162,7 @@
     transform: rotate(10deg);
     z-index: 1;
 }
-.testimonials_swiper .swiper-slide-next-next .testimonials_swiper_slide {
+.testimonials_swiper .swiper-slide[data-slide-next-next] .testimonials_swiper_slide {
     transform: rotate(-10deg);
     margin-left: -48px;
     z-index: 0;

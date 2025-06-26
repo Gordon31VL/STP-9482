@@ -5,6 +5,7 @@
 .how_to_play_section_content {
   position: relative;
   /* margin-bottom: 120px; */
+  overflow: visible;
 }
 
 .how_to_play_box_title {
@@ -786,6 +787,7 @@
   margin-top: 32px;
   margin-bottom: 32px;
   position: relative;
+  overflow: visible;
 }
 
 .how_to_play_pressure_box_title,
@@ -802,10 +804,14 @@
 .how_to_play_pressure_box_title {
   margin-bottom: 20px;
 }
-
+.how_to_play_section_content .container {
+  overflow: visible;
+}
 .how_to_play_pressure_box::before {
   content: '';
+  overflow: visible;
   position: absolute;
+  
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -815,14 +821,14 @@
     url('/img/how_to_play/first_fire_pressure_background_mobile_element.png'),
     url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
     url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
-    url('/img/how_to_play/second_star_pressure_background_mobile_element.png'),
-    url('/img/how_to_play/first_heart_pressure_background_mobile_element.png'),
-    url('/img/how_to_play/second_heart_pressure_background_mobile_element.png');
-  background-position: top 478px right 0, top 452px left 0, top 70px right 0,
-    top 303px right 0, top 303px left 0, top 46px left 0, top 488px left 86px;
+    url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/second_heart_pressure_background_mobile_element.png'),
+    url('/img/how_to_play/first_heart_pressure_background_mobile_element.png');
+  background-position: top 478px right -30px, top 452px left -35px, top 70px right -12px,
+    top 303px right -12px, top 303px left -12px, top 46px left -8px, top 488px left 86px;
   background-repeat: no-repeat;
-  background-size: 61px 91px, 52px 88px, 23px 35px, 23px 35px, 26px 35px,
-    40px 48px, 109px 108px;
+  background-size: 90px 91px, 87px 88px, 35px 35px, 35px 35px, 35px 35px,
+    48px 48px, 109px 108px;
   background-clip: content;
   z-index: -1;
 }
@@ -1005,3 +1011,4 @@
     fill: #df9d91;
   }
 }
+

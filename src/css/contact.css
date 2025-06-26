@@ -92,6 +92,11 @@
 .contact-p-desk-only {
   display: none;
 }
+
+.contact-content {
+  max-width: 160px;
+}
+
 @media only screen and (min-width: 1200px) {
   section.contact-section.section--closed {
     background: none !important;
