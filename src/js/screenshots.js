@@ -4,20 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const backdrop = document.querySelector('[data-screenshot-backdrop]');
   const screenshots = document.querySelectorAll('[data-screenshot-img]');
 
-  screenshots.forEach(img => {
+  screenshots.forEach((img, index) => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => {
       if (modal.classList.contains('active') && modalImg.src === img.src) {
         closeModal();
       } else {
-        openModal(img);
+        openModal(img, index + 1);
       }
     });
   });
 
-  function openModal(img) {
+  function openModal(img, index) {
     modalImg.src = img.src;
     modalImg.srcset = img.srcset || '';
+    modalImg.setAttribute('data-screenshot-index', index);
     modal.style.display = 'flex';
 
     setTimeout(() => {
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       modal.style.display = 'none';
       modalImg.src = '';
+      modalImg.removeAttribute('data-screenshot-index');
     }, 300);
   }
 
