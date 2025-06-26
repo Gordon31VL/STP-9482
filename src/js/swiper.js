@@ -140,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
       spaceBetween: 16,
       centeredSlides: true,
       watchSlidesProgress: true,
-      simulateTouch: false,
       autoplay: {
         delay: 10000,
         disableOnInteraction: false,

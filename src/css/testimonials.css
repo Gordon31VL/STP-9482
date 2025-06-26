@@ -25,6 +25,7 @@
   align-items: center;
   transition: transform 0.4s, z-index 0.4s;
   z-index: 1;
+  cursor: pointer;
 }
 
 .testimonials_swiper .swiper-slide-active .testimonials_swiper_slide {

@@ -99,7 +99,11 @@
   left: 0;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+}
+.toggleBtn:active .icon {
+  fill: #df9d91;
+  stroke: #df9d91;
 }
 
 .toggleBtn.show-closed .icon-closed {
@@ -120,6 +124,7 @@
     width: 100%;
     margin-top: 40px;
     margin-bottom: 64px;
+    overflow: hidden;
   }
   .faq-column {
     display: flex;
@@ -180,12 +185,31 @@
     z-index: 2;
     top: 0;
 
-    /* width: 315%; */
-    right: 0;
-    transform: translateX(-68%) scale(1);
+    left: 0;
+    transform: translateX(-68%);
     transition: transform 0.3s ease, height 0.3s ease;
   }
   .faq-column.side .expanded .faq-button {
     flex-direction: row;
+  }
+
+  .toggleBtn:active .icon {
+    fill: #df9d91;
+    stroke: #df9d91;
+  }
+
+  .toggleBtn:hover .icon,.toggleBtn:focus .icon {
+    fill: #df9d91;
+    stroke: #df9d91;
+  }
+
+  .faq-column.side .toggleBtn:active .icon {
+    fill: #8dfeff;
+    stroke: #8dfeff;
+  }
+
+  .faq-column.side .toggleBtn:hover .icon, .faq-column.side .toggleBtn:focus .icon {
+    fill: #8dfeff;
+    stroke: #8dfeff;
   }
 }

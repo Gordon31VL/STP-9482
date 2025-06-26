@@ -3,6 +3,7 @@ html {
 }
 .footer-section {
   background: #8dfeff;
+  border-top: solid 2px #0C1729;
 }
 .hero-container {
   position: relative;
