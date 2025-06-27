@@ -3,25 +3,23 @@ document.querySelectorAll('[data-toggle-btn]').forEach(btn => {
     const faqItem = btn.closest('[data-faq-item]');
     const popup = faqItem.querySelector('[data-popup]');
     const faqList = btn.closest('[data-faq-list]');
-    const isExpanded = faqList.classList.contains('expanded');
+    const isExpanded = faqList.getAttribute('data-expanded') === 'true';
 
     // Закриваємо всі інші
     document.querySelectorAll('[data-faq-list]').forEach(item => {
-      item.classList.remove('expanded');
+      item.setAttribute('data-expanded', 'false');
       const popup = item.querySelector('[data-popup]');
-      popup?.classList.add('hidden');
+      popup?.setAttribute('data-visible', 'false');
 
       const otherBtn = item.querySelector('[data-toggle-btn]');
-      otherBtn?.classList.remove('show-open');
-      otherBtn?.classList.add('show-closed');
+      otherBtn?.setAttribute('data-state', 'closed');
     });
 
     // Якщо була закрита — розкриваємо
     if (!isExpanded) {
-      faqList.classList.add('expanded');
-      popup.classList.remove('hidden');
-      btn.classList.remove('show-closed');
-      btn.classList.add('show-open');
+      faqList.setAttribute('data-expanded', 'true');
+      popup.setAttribute('data-visible', 'true');
+      btn.setAttribute('data-state', 'open');
     }
   });
 });

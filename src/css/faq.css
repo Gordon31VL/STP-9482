@@ -27,11 +27,12 @@
   transition: height 0.4s ease;
   position: relative;
 }
+
 .faq-item {
   width: 100%;
 }
 
-.faq-list.expanded {
+.faq-list[data-expanded='true'] {
   height: 264px;
   display: flex;
   align-items: flex-start;
@@ -40,6 +41,7 @@
 .faq-list:not(:last-child) {
   margin-bottom: 12px;
 }
+
 .faq-button {
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,7 @@
   line-height: 24px;
   letter-spacing: 0%;
 }
+
 .faq-title {
   flex: 1;
   overflow-wrap: break-word;
@@ -63,8 +66,13 @@
   max-width: 100%;
   transition: all 0.3s ease;
 }
-.popup.show {
+
+.popup[data-visible='true'] {
   display: block;
+}
+
+.popup[data-visible='false'] {
+  display: none;
 }
 
 .hidden {
@@ -81,6 +89,7 @@
   left: 0;
   transition: opacity 0.3s ease;
 }
+
 .toggleBtn {
   width: 36px;
   height: 17px;
@@ -101,17 +110,18 @@
   pointer-events: none;
   transition: opacity 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
 }
+
 .toggleBtn:active .icon {
   fill: #df9d91;
   stroke: #df9d91;
 }
 
-.toggleBtn.show-closed .icon-closed {
+.toggleBtn[data-state='closed'] .icon-closed {
   opacity: 1;
   pointer-events: auto;
 }
 
-.toggleBtn.show-open .icon-open {
+.toggleBtn[data-state='open'] .icon-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -132,7 +142,6 @@
   }
   .faq-column.side {
     width: 25%;
-
     justify-content: space-between;
   }
   .faq-column.side .faq-list {
@@ -142,7 +151,6 @@
   .faq-column.center {
     width: 50%;
     margin: auto 24px;
-
     justify-content: space-between;
   }
   .faq-column.center .faq-list {
@@ -165,11 +173,11 @@
     margin: 0;
     text-align: center;
   }
-  .faq-column.center .faq-list.expanded {
+  .faq-column.center .faq-list[data-expanded='true'] {
     height: 220px;
   }
 
-  .faq-column.side .faq-list.expanded {
+  .faq-column.side .faq-list[data-expanded='true'] {
     position: static;
     z-index: 2;
     top: 0;
@@ -180,16 +188,15 @@
     position: relative;
     overflow: visible;
   }
-  .faq-column.side.right .faq-list.expanded {
+  .faq-column.side.right .faq-list[data-expanded='true'] {
     position: static;
     z-index: 2;
     top: 0;
-
     left: 0;
     transform: translateX(-68%);
     transition: transform 0.3s ease, height 0.3s ease;
   }
-  .faq-column.side .expanded .faq-button {
+  .faq-column.side .faq-list[data-expanded='true'] .faq-button {
     flex-direction: row;
   }
 
