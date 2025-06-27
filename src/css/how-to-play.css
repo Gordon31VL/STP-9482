@@ -804,7 +804,7 @@
 .how_to_play_pressure_box_title {
   margin-bottom: 20px;
 }
-.how_to_play_section_content .container {
+.how_to_play_pressure_box {
   overflow: visible;
 }
 .how_to_play_pressure_box::before {
@@ -815,7 +815,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 320px;
+  width: min(100vw, 425px); 
   height: 100%;
   background: url('/img/how_to_play/first_diamont_pressure_background_mobile_element.png'),
     url('/img/how_to_play/first_fire_pressure_background_mobile_element.png'),
@@ -824,8 +824,14 @@
     url('/img/how_to_play/first_star_pressure_background_mobile_element.png'),
     url('/img/how_to_play/second_heart_pressure_background_mobile_element.png'),
     url('/img/how_to_play/first_heart_pressure_background_mobile_element.png');
-  background-position: top 478px right -30px, top 452px left -35px, top 70px right -12px,
-    top 303px right -12px, top 303px left -12px, top 46px left -8px, top 488px left 86px;
+    background-position: 
+    calc(50% + 150px) 478px,
+    calc(50% - 152px) 452px,
+    calc(50% + 154px) 70px,
+    calc(50% + 154px) 303px,
+    calc(50% - 154px) 303px,
+    calc(50% - 152px) 46px,
+    calc(50%) 488px;
   background-repeat: no-repeat;
   background-size: 90px 91px, 87px 88px, 35px 35px, 35px 35px, 35px 35px,
     48px 48px, 109px 108px;
