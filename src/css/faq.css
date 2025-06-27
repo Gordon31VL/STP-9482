@@ -220,3 +220,7 @@
     stroke: #8dfeff;
   }
 }
+
+.screen-section.section--closed {
+  margin: 0;
+}
