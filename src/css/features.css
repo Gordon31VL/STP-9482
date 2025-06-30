@@ -72,9 +72,9 @@
   .features_section {
   background: url('/img/features/background_element.png');
   background-repeat: no-repeat;
-  background-size: auto 700px;
-  background-position: bottom ;
-  padding-bottom: 24px;
+  background-size: 1200px 650px;
+  background-position: bottom;
+  /* padding-bottom: 64px; */
 }
 
   .features_about_top,
