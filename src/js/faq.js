@@ -21,5 +21,6 @@ document.querySelectorAll('[data-toggle-btn]').forEach(btn => {
       popup.setAttribute('data-visible', 'true');
       btn.setAttribute('data-state', 'open');
     }
+    btn.blur();
   });
 });
